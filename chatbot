@@ -1,0 +1,25 @@
+# Simple Rule-Based Chatbot
+
+def chatbot():
+    print("Welcome to the Chatbot!")
+    print("Type 'bye' to end the conversation.\n")
+
+    while True:
+        message = input("You: ")
+        message = message.lower()
+
+        if message == "hello":
+            print("Bot: Hi!")
+
+        elif message == "how are you":
+            print("Bot: I'm fine, thanks!")
+
+        elif message == "bye":
+            print("Bot: Goodbye!")
+            break
+
+        else:
+            print("Bot: Sorry, I don't understand that.")
+
+# Start the chatbot
+chatbot()
